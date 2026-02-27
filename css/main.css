@@ -110,6 +110,15 @@
   font-weight: 900;
   src: url("../fonts/rubik-v31-latin-900italic.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+/* lobster-regular - cyrillic_cyrillic-ext_latin_latin-ext_vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lobster-v32-cyrillic_cyrillic-ext_latin_latin-ext_vietnamese-regular.woff2")
+    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 * {
   margin: 0;
@@ -158,6 +167,8 @@ body {
   padding: 20px;
 }
 header {
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background-image: url(../imgs/png-img/header-png.png);
   background-repeat: no-repeat;
@@ -196,9 +207,30 @@ header {
   display: flex;
   gap: 26px;
 }
+.hero {
+  flex-grow: 1;
+}
+.hero-container {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  font-family: "Lobster", display;
+  font-size: 100px;
+  line-height: 100%;
+  color: white;
+}
 
 main {
   flex-grow: 1;
+}
+@media (max-width: 1200px) {
+  .title {
+    font-size: 80px;
+  }
 }
 @media (max-width: 900px) {
   .logo {
@@ -209,6 +241,9 @@ main {
     width: 50px;
     height: 50px;
   }
+  .title {
+    font-size: 70px;
+  }
 }
 @media (max-width: 765px) {
   .sitenav-links {
@@ -217,6 +252,9 @@ main {
   .menu-btn {
     display: block;
   }
+  .title {
+    font-size: 60px;
+  }
 }
 @media (max-width: 550px) {
   header {
@@ -224,5 +262,8 @@ main {
   }
   .sitenav-icons {
     gap: 10px;
+  }
+  .title {
+    font-size: 50px;
   }
 }
