@@ -319,6 +319,17 @@ main {
     line-height: 15px;
   }
 }
+@media (max-width: 450px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-content .imgs-cof {
+    order: -2;
+  }
+}
+
 /*telefon*/
 @media (max-width: 315px) {
   .sitenav-icons a img {
