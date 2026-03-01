@@ -268,6 +268,11 @@ main {
     width: 437px;
     height: 387px;
   }
+  .parent {
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 /*planshet*/
 @media (max-width: 765px) {
@@ -298,16 +303,24 @@ main {
   .responsive {
     display: block;
   }
+
   .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-}
-.about-us p {
-  font-size: 15px;
-  line-height: 20px;
+  .about-us p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .parent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 550px) {
@@ -370,6 +383,7 @@ main {
   letter-spacing: -0.33px;
   padding-bottom: 33px;
 }
+
 .text {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -394,7 +408,6 @@ main {
   img {
     width: 100px;
     height: 100px;
-    display: flex;
   }
   h3 {
     padding-top: 21px;
