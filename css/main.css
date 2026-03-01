@@ -221,6 +221,9 @@ header {
   line-height: 100%;
   color: white;
 }
+button:hover {
+  background-color: red;
+}
 main {
   flex-grow: 1;
 }
@@ -281,10 +284,7 @@ main {
     width: 400px;
     height: 350px;
   }
-  .about-us p {
-    font-size: 10px;
-    line-height: 20px;
-  }
+
   .about-us h3 {
     font-size: 25px;
     line-height: 25px;
@@ -295,11 +295,21 @@ main {
 }
 /*telefon*/
 @media (max-width: 650px) {
-  .imgs-cof img {
-    width: 350px;
-    height: 300px;
+  .responsive {
+    display: block;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
+.about-us p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
 @media (max-width: 550px) {
   header {
     background-image: url(../imgs/png-img/header-responsive.png);
@@ -313,20 +323,6 @@ main {
   .imgs-cof img {
     width: 300px;
     height: 250px;
-  }
-  .about-us p {
-    font-size: 8px;
-    line-height: 15px;
-  }
-}
-@media (max-width: 450px) {
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .about-content .imgs-cof {
-    order: -2;
   }
 }
 
@@ -357,10 +353,14 @@ main {
   height: 100%;
   background-color: #fff4d8;
 }
+.responsive {
+  display: none;
+}
 .main-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 .about {
   font-family: "Lobster", display;
@@ -384,4 +384,56 @@ main {
   background-color: #f39c11;
   border-radius: 10px;
   color: aliceblue;
+}
+/*content 2*/
+.parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+  }
+  h3 {
+    padding-top: 21px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.33px;
+  }
+  p {
+    width: 227px;
+    padding-top: 12px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.33px;
+  }
+  h4 {
+    font-family: "Rubik", sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.33px;
+    color: white;
+  }
+}
+.name {
+  display: block;
+  text-align: center;
+  color: white;
+  font-family: "Lobster", display;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.33px;
+}
+
+.content2 {
+  padding-top: 56px;
+  padding-bottom: 49px;
+  background-color: #3d210c;
 }
