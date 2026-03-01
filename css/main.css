@@ -236,6 +236,10 @@ main {
     width: 487px;
     height: 437px;
   }
+  .box-model {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 1100px) {
   .imgs-cof img {
@@ -249,6 +253,17 @@ main {
   .about-us p {
     font-size: 15px;
     line-height: 25px;
+  }
+  .box-model .box {
+    width: 338px;
+    height: 514px;
+  }
+  .box .americano {
+    width: 338px;
+    padding: 24px 24px;
+  }
+  .franklin {
+    padding-bottom: 15px;
   }
 }
 /*planshet*/
@@ -319,6 +334,12 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
+  }
+  .box-model {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 }
@@ -449,4 +470,75 @@ main {
   padding-top: 56px;
   padding-bottom: 49px;
   background-color: #3d210c;
+}
+/*content3*/
+.content3 {
+  padding-top: 58px;
+  padding-bottom: 70px;
+  background-color: #fff4d8;
+}
+.box {
+  border-radius: 20px;
+  background-color: white;
+  width: 444px;
+  height: 625px;
+
+  h3 {
+    padding-left: 24px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  p {
+    color: #555555;
+  }
+}
+.box-model {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding-top: 110px;
+}
+.box .americano {
+  padding: 24px 24px;
+}
+.menu {
+  display: block;
+  text-align: center;
+  font-family: "Lobster", display;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.33px;
+}
+.baho {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.yulduzcha {
+  padding-top: 9px;
+  padding-left: 24px;
+}
+.text-cofe {
+  padding: 24px 24px 37px 24px;
+}
+.franklin {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 15px 17px;
+  border: 1px solid #f39c11;
+  border-radius: 10px;
+  background: none;
+
+  span {
+    color: #f39c11;
+  }
 }
